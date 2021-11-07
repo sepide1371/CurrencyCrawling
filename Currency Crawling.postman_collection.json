@@ -1,0 +1,626 @@
+{
+	"info": {
+		"_postman_id": "d5e7a82a-c76e-4599-8f84-7532955bddbb",
+		"name": "Currency Crawling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client_id\":\"bBOCOhs7N8CiT1s3GvYdkRM3PSPlW8TlykuAABG0\",\r\n    \"grant_type\":\"password\",\r\n    \"username\": \"admin\",\r\n    \"password\": \"123\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/oauth/token/",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"oauth",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_id\":\"bBOCOhs7N8CiT1s3GvYdkRM3PSPlW8TlykuAABG0\",\r\n    \"grant_type\":\"password\",\r\n    \"username\":\"admin\",\r\n    \"password\":\"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/oauth/token/",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"oauth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 06 Nov 2021 15:20:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "176"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"812112u4xiMhZtvlGKH3mH0DilDtK0\",\n    \"expires_in\": 36000,\n    \"token_type\": \"Bearer\",\n    \"scope\": \"read write groups\",\n    \"refresh_token\": \"YJLxLgACV1a28f3b1fuKwX7nVgbSuw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Token(RefreshToken)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"client_id\":\"bBOCOhs7N8CiT1s3GvYdkRM3PSPlW8TlykuAABG0\",\r\n    \"grant_type\":\"refresh_token\",\r\n    \"refresh_token\":\"bjDL4U6MqbXbz5HSyI3nLOXisFvv2U\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/oauth/token/",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"oauth",
+						"token",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Token(RefreshToken)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"client_id\":\"bBOCOhs7N8CiT1s3GvYdkRM3PSPlW8TlykuAABG0\",\r\n    \"grant_type\":\"refresh_token\",\r\n    \"refresh_token\":\"bjDL4U6MqbXbz5HSyI3nLOXisFvv2U\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/oauth/token/",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"oauth",
+								"token",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 07 Nov 2021 17:07:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "176"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"TJcGSmWFPPGH2UogsOzydRCn4CE5Fv\",\n    \"expires_in\": 36000,\n    \"token_type\": \"Bearer\",\n    \"scope\": \"read write groups\",\n    \"refresh_token\": \"7c1z6628ugpwpqECLfszvEbsPuKanV\"\n}"
+				}
+			]
+		},
+		{
+			"name": "CurrentUsd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{AccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/current/usd",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"current",
+						"usd"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CurrentUsd",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/current/usd",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"current",
+								"usd"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 06 Nov 2021 15:21:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "161"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Header\": {\n        \"Status\": 0,\n        \"Message\": \"Successful Operation\",\n        \"MessageCode\": 0\n    },\n    \"ContentData\": {\n        \"id\": 3,\n        \"name\": \"usd\",\n        \"amount\": 277910,\n        \"time\": \"2021-11-06T13:41:14.696810Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CurrentEuro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{AccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/current/euro",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"current",
+						"euro"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CurrentEuro",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/current/euro",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"current",
+								"euro"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 06 Nov 2021 15:22:12 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "162"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Header\": {\n        \"Status\": 0,\n        \"Message\": \"Successful Operation\",\n        \"MessageCode\": 0\n    },\n    \"ContentData\": {\n        \"id\": 4,\n        \"name\": \"euro\",\n        \"amount\": 321650,\n        \"time\": \"2021-11-06T13:41:14.778951Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "HistoryUsd",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{AccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/history/usd",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"history",
+						"usd"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "HistoryUsd",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/history/usd",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"history",
+								"usd"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 06 Nov 2021 15:11:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "231"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Header\": {\n        \"Status\": 0,\n        \"Message\": \"Successful Operation\",\n        \"MessageCode\": 0\n    },\n    \"ContentData\": [\n        {\n            \"id\": 1,\n            \"name\": \"usd\",\n            \"amount\": 271530,\n            \"time\": \"2021-11-06T08:48:20Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"usd\",\n            \"amount\": 277910,\n            \"time\": \"2021-11-06T13:41:14.696810Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "HistoryEuro",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{AccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/history/euro",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"history",
+						"euro"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "HistoryEuro",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/history/euro",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"history",
+								"euro"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 06 Nov 2021 15:22:40 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Header\": {\n        \"Status\": 0,\n        \"Message\": \"Successful Operation\",\n        \"MessageCode\": 0\n    },\n    \"ContentData\": [\n        {\n            \"id\": 2,\n            \"name\": \"euro\",\n            \"amount\": 315264,\n            \"time\": \"2021-11-06T08:48:43Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"euro\",\n            \"amount\": 321650,\n            \"time\": \"2021-11-06T13:41:14.778951Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "HistoryRatio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{AccessToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/history/ratio",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"history",
+						"ratio"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "HistoryRatio",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/history/ratio",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"history",
+								"ratio"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sat, 06 Nov 2021 15:22:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.6.13"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Header\": {\n        \"Status\": 0,\n        \"Message\": \"Successful Operation\",\n        \"MessageCode\": 0\n    },\n    \"ContentData\": [\n        {\n            \"id\": 1,\n            \"ratio\": \"0.2587\",\n            \"time\": \"2021-11-06T11:10:58Z\"\n        },\n        {\n            \"id\": 2,\n            \"ratio\": \"0.3320\",\n            \"time\": \"2021-11-06T11:45:54Z\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": " http://127.0.0.1:8000"
+		},
+		{
+			"key": "AccessToken",
+			"value": "4qs56lMcAu4WkeCtSlBWU8lmOYS4um"
+		}
+	]
+}
